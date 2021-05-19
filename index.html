@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- E-Mail -->
+    <title>Contact Form Tutorial by Bootstrapious.com</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -12,6 +19,21 @@
 
     <link rel= "stylesheet" type= "text/css" href= "BlueOrchid.css">  
     <script src="BlueOrchid.js" defer></script>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,21 +52,161 @@
   <body>
     
 <header>
-  
+
+  <div class="container-fluid" style="padding: 15px;">
+    <div class="row justify-content-md-right">
+        <div class="col-md-6">
+          <p><b><u>TITEL / HEADER</u></b>
+          </p>
+          <img src="" data-toggle="popover" data-content="this is a Wall" >
+        </div>
+        <div class="col-md-6">
+          <img src="">
+        </div>
+    </div>
+</div>
   
 </header>
+  
+  <div class="containerFoto1">
+    <p><b><u>Fotos / Galerie</u></b>      
+          
+  </div> 
+  <p>
+
+   <!-- <div>
+      <button class="btn-circle.btn-lg" type="button"></button>-->
+        
+      
+    </div>
+
+  </p>
+  <div class="containerFoto2">
+    <p><b><u>Fotos / Galerie</u></b>      
+      <p><b><u>Kontaktform</u></b>      
+  </div> 
+
+<!--E-Mail-->
+<div class="container">
+
+  <div class="rowEmail">
+
+      <div class="col-xl-8 offset-xl-2 py-5">
+
+          <p>Sie können uns Ihre Wünsche und Anliegen sehr gerne mitteilen.  </p>
+
+          <p class="lead">Kontaktformular:</p>
+
+          <!-- fancy script -->
+          <form id="contact-form" method="post" action="contact.php" role="form">
+
+            <div class="messages"></div>
+        
+            <div class="controls">
+        
+                <div class="rowEmail">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">Vorname *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Bitte Ihren Vornamen *" required="required" data-error="Vorname fehlt.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Nachname *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Bitte Ihren Nachnamen *" required="required" data-error="Nachname notwendig*">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowEmail">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Bitte Ihre E-Mail Adresse *" required="required" data-error="Gültige E-Mail notwendig.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_need">Ihre Anfrage *</label>
+                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                <option value=""></option>
+                                <option value="Spenden">Spenden</option>
+                                <option value="Anfrage">Anfrage</option>
+                                <option value="Orders">Orders</option>
+                                <option value="Anderes">Anderweitiges</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowEmail">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Nachricht *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Ihre Nachricht *" rows="4" required="required" data-error="Nachricht bitte hier."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="abschicken">
+                    </div>
+                </div>
+                <div class="rowEmail">
+                    <div class="col-md-12">
+                        <p class="text-muted">
+                            <strong>*</strong> Diese Angaben sind notwendig
+                            <a href="https://www.google.com/search?sxsrf=ALeKk01HD1HHSfgJwnoXn23D3ZzVFOcjhg:1619377869146&q=Wie+kann+ich+meine+E-Mail+Adresse+eingeben%3F&sa=X&ved=2ahUKEwjNuZbVjJrwAhWUHewKHRpfA7IQzmd6BAgKEAU&biw=848&bih=860" target="_blank">Hilfe</a>.</p>
+                    </div>
+                </div>
+            </div>
+        
+        </form>
+         
+
+      </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+<script src="contact.js"></script>
 
 
+  
+ 
+  
+  <div class="footer">
+    <!-- Reihe mit 3 Feldern -->
+    
+    <div class="row">
+        <div class="col1" >Bankkonto<p> UBS AG<p></p> 123-123-123</p><p>Danke für Ihre Spende</p></div>
+        <div class="col2" >Hi das  ist ein TEST</div>
+        <div class="col3" >Viele Blumen</div>            
+    </div>
+  </div>
 
-<footer class="text-muted py-5">
-  <div class="container">
+
+<!-- Reihe mit 3 Feldern 
+<div class="container-fluid2" style="padding: 15px;"><div>
+  <div class="Footer">
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
     <p class="mb-1"><u>Site created by KSMUC &copy;</u> </p>
     <p class="mb-0">For more infos about Orchids<a href="https://de.wikipedia.org/wiki/Orchideen"> Wikipedia</p>
   </div>
+  </div>-->
 </footer>
+
+
+
 
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
