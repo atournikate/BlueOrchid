@@ -16,12 +16,12 @@
     <style>
       body {
         display: flex;
-        flex-direction: row;
         font-family: "Poppins", sans-serif;
         color: #182d66;
       }
 
       .container {
+        flex-direction: column-reverse;
         justify-content: space-around;
         align-content: center;
       }
@@ -31,7 +31,11 @@
         border-radius: 50%;
       }
 
-      .opt3 {
+      .logo {
+        flex-direction: row;
+      }
+
+      .brandName {
         font-family: "Tangerine", cursive;
         font-weight: 700;
         font-size: 60px;
@@ -64,8 +68,7 @@
           width="200px"
           alt="Art neuveau looking orchid"
         />
-
-        <h1 class="opt3">Blue Orchid</h1>
+        <h1 class="brandName">Blue Orchid</h1>
       </div>
 
       <button type="button" class="btn-primary">Click Me?</button>
