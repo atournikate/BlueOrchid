@@ -25,161 +25,7 @@
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        color: #182d66;
-        margin: 0px;
-        padding: 0px;
-      }
-
-      .header {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .carousel-item {
-        margin: 0px;
-        padding: 0px;
-        height: 80vh;
-        background: no-repeat center scroll;
-        background-size: cover;
-      }
-
-      .carousel-item:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: radial-gradient(
-          circle,
-          rgba(162, 137, 167, 0.45),
-          rgba(24, 45, 102, 0.75)
-        );
-      }
-      .carousel-caption {
-        color: #cff6ff;
-      }
-
-      nav {
-        z-index: 1000;
-      }
-
-      .navbar {
-        height: 60px;
-      }
-
-      .navbar-brand {
-        width: 80px;
-        align-content: start;
-      }
-
-      .brandName {
-        font-family: "Tangerine", cursive;
-        display: inline;
-      }
-
-      .navbar-nav {
-        padding: 5px;
-      }
-
-      /*This adds background to collapsible nav so it has a background*/
-      #collapsibleNavId {
-        background-color: linear-gradient(to right, #f9f9f9);
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      .heroText {
-        font-family: "Playfair Display", serif;
-      }
-
-      .btn-circle.btn-lg {
-        background-image: url(./images/single_blueOrch.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100px;
-        border: none;
-        color: #cff6ff;
-        font-weight: bolder;
-        width: 100px;
-        height: 100px;
-        padding: 36px 16px;
-        border-radius: 50%;
-        font-size: 16px;
-        line-height: 1.33;
-      }
-
-      .btn-circle.btn-sm {
-        background-image: url(./images/single_blueOrch.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 80px;
-        border: none;
-        color: #cff6ff;
-        font-weight: bolder;
-        width: 80px;
-        height: 80px;
-        padding: 24px 12px;
-        border-radius: 50%;
-        font-size: 14px;
-        line-height: 1.25;
-      }
-
-      .highlights {
-        background-color: #cff6ff;
-      }
-
-      #box1 {
-        background-color: #cff6ff;
-      }
-
-      #box2 {
-        background-color: #9ec6c9;
-      }
-
-      #box3 {
-        background-color: #cff6ff;
-      }
-
-      .news_bg_image {
-        background-image: linear-gradient(transparent, white 85%),
-          url(./images/blue_orch_transbkgd.PNG);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: absolute;
-      }
-
-      .news_formBox {
-        background-image: linear-gradient(
-          transparent,
-          #cff6ff 50%,
-          transparent
-        );
-        width: 80%;
-        position: relative;
-        top: 75px;
-        left: 75px;
-      }
-
-      .form-select {
-        color: #182d66;
-      }
-
-      .footer {
-        background-color: #4c3860;
-        color: #cff6ff;
-        height: 100px;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="BlueOrchid_final.css" />
   </head>
 
   <body>
@@ -270,7 +116,7 @@
       <!--END HEADER CONTAINER-->
 
       <!--BEGIN NAV-->
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
         <!--logo-->
         <a class="navbar-brand col-span-2" href="#"
           ><img class="pb-2" src="BOS_logo_dk.PNG" width="40%" />
@@ -298,19 +144,22 @@
               <a class="nav-link" href="home_marc.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about_marc.html">About</a>
+              <a class="nav-link" href="news_kate.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact_marc.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="statuten_urs.html">Legal</a>
+              <a class="nav-link" href="StatutenKomp.html">Legal</a>
             </li>
           </ul>
           <!--END LINKS-->
 
           <!--search bar-->
-          <form class="form-inline my-5 my-lg-5">
+          <form class="form-inline">
             <input
               class="form-control"
               style="width: 200px"

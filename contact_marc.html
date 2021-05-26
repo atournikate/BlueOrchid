@@ -49,52 +49,66 @@
             </div>
         </div><!--End container (main Header)-->
             
-            <!--Navbar-->
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <!--BEGIN NAV-->
+      <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
+        <!--logo-->
+        <a class="navbar-brand col-span-2" href="#"
+          ><img class="pb-2" src="BOS_logo_dk.PNG" width="40%" />
+          <h2 class="brandName pl-3">Blue Orchid</h2></a
+        >
 
-                <!--logo-->
-                <a class="navbar-brand" href="#"><img src="BOS_logo_dk.PNG" width=40% class= "pb-2"><h2 class="brandName pl-3">Blue Orchid</h2></a>
+        <!--dropdown button-->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <!--dropdown button-->
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!--collapsing commands-->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <!--links to other pages-->
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home_marc.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news_kate.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_marc.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="StatutenKomp.html">Legal</a>
+            </li>
+          </ul>
+          <!--END LINKS-->
 
-                <!--collapsing commands-->
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-
-                    <!--links to other pages-->
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="dropdown">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Legal</a>
-                        </li>                       
-                       
-                        
-                    </ul>
-
-                     <!--search bar-->
-                     <form class="form-inline">
-                            
-                        <input class="form-control" type="text" placeholder="Search">
-                        <button class="btn btn-outline-primary my- my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
+          <!--search bar-->
+          <form class="form-inline">
+            <input
+              class="form-control"
+              style="width: 200px"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-primary my-lg-0" type="submit">
+              Search
+            </button>
+          </form>
+          <!--END SEARCH BAR-->
+        </div>
+        <!--END COLLAPSE-->
+      </nav>
+      <!--END NAV-->
 
         </div> 
     </div><!--Close header-->

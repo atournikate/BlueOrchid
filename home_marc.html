@@ -12,7 +12,7 @@
        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 
        <!-- Marc CSS-->
-       <link rel="stylesheet" type="text/css" href="blueorchid_marc.css">
+       <link rel="stylesheet" type="text/css" href="BlueOrchid_final.css">
 
         <!-- Marc JS-->               
         <script src="blueorchid_marc.js" defer></script>
@@ -37,7 +37,7 @@
 
     <body>
         
-        <div class="header"> <!--Open Page Header-->
+        <div class="home_header"> <!--Open Page Header-->
             <div class="container mw-100"> <!--container (main header)-->
                     
                 <div class="heroWelcome">
@@ -49,48 +49,66 @@
                 </div>
             </div><!--End container (main Header)-->
                 
-                <!--Navbar-->
-                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <!--BEGIN NAV-->
+      <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
+        <!--logo-->
+        <a class="navbar-brand col-span-2" href="#"
+          ><img class="pb-2" src="BOS_logo_dk.PNG" width="40%" />
+          <h2 class="brandName pl-3">Blue Orchid</h2></a
+        >
 
-                    <!--logo-->
-                    <a class="navbar-brand" href="#"><img src="BOS_logo_dk.PNG" width=40% class= "pb-2"><h2 class="brandName pl-3">Blue Orchid</h2></a>
+        <!--dropdown button-->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <!--dropdown button-->
-                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <!--collapsing commands-->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <!--links to other pages-->
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home_marc.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news_kate.html">News</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_marc.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="StatutenKomp.html">Legal</a>
+            </li>
+          </ul>
+          <!--END LINKS-->
 
-                    <!--collapsing commands-->
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-
-                        <!--links to other pages-->
-                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="dropdown">
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Legal</a>
-                            </li>                       
-                           
-                            
-                        </ul>
-
-                         <!--search bar-->
-                         <form class="form-inline">
-                                
-                            <input class="form-control" type="text" placeholder="Search">
-                            <button class="btn btn-outline-primary my- my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
+          <!--search bar-->
+          <form class="form-inline">
+            <input
+              class="form-control"
+              style="width: 200px"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-primary my-lg-0" type="submit">
+              Search
+            </button>
+          </form>
+          <!--END SEARCH BAR-->
+        </div>
+        <!--END COLLAPSE-->
+      </nav>
+      <!--END NAV-->
 
             </div> 
         </div><!--Close header-->
@@ -106,7 +124,7 @@
                 <div class= "columns">
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img class="photobox1" width="100%" src="/images/Blumenbeet.jpg">
+                            <img class="photobox1" width="100%" src="./images/Blumenbeet.jpg">
                             <div class="card-body">
                                 <p class="card-text1">WELCOME TO OUR HAPPY PLACE</p>
                                 <div class="d-flex justify-content-between align-items-center">                                  
@@ -146,7 +164,7 @@
         
             
         <footer class="text-muted pt-5">
-            <div class="footer">
+            <div class="home_footer">
               <p class="float-end mb-1">
                 <a href="#">Back to top</a>
               </p>

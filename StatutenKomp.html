@@ -4,9 +4,9 @@
    
         
             
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-            <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-            <link href='custom.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
@@ -22,7 +22,6 @@
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel= "stylesheet" type= "text/css" href= "BlueOrchid.css">  
         
         <!-- Für die Newsletter Form-->
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -30,58 +29,76 @@
 
         <!-- Bootstrap core CSS -->
         <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
+        <link rel="stylesheet" type="text/css" href="BlueOrchid_final.css">
     </head>
 
    
 <body>
 
 <!--Begin container (main Header)-->
-<div> 
+<div class="stat_header"> 
 
     
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-
+    <!--BEGIN NAV-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
         <!--logo-->
-        <a class="navbar-brand" href="#"><img src="/BlueOrchid/images/BOS_logo_dk.png" width=40% class= "pb-2"><h2 class="brandName pl-3">Blue Orchid</h2></a>
+        <a class="navbar-brand col-span-2" href="#"
+          ><img class="pb-2" src="BOS_logo_dk.PNG" width="40%" />
+          <h2 class="brandName pl-3">Blue Orchid</h2></a
+        >
 
         <!--dropdown button-->
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <!--collapsing commands-->
         <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <!--links to other pages-->
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home_marc.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news_kate.html">News</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_marc.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="StatutenKomp.html">Legal</a>
+            </li>
+          </ul>
+          <!--END LINKS-->
 
-            <!--links to other pages-->
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="dropdown">
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Legal</a>
-                </li>                       
-               
-                
-            </ul>
-
-             <!--search bar-->
-             <form class="form-inline">
-                    
-                <input class="form-control" style="width: 200px;" type="text" placeholder="Search">
-                <button class="btn btn-outline-primary my- my-sm-0" type="submit">Search</button>
-            </form>
+          <!--search bar-->
+          <form class="form-inline">
+            <input
+              class="form-control"
+              style="width: 200px"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-primary my-lg-0" type="submit">
+              Search
+            </button>
+          </form>
+          <!--END SEARCH BAR-->
         </div>
+        <!--END COLLAPSE-->
     </nav>
+      <!--END NAV-->
 
 </div><!--Close header-->
 
@@ -94,7 +111,7 @@
 
     <div class="row">
           <!-- linke Box-->
-        <div class="col-sm-4"><img src="/BlueOrchid/images/ZGBtry.jpg" ></div>
+        <div class="col-sm-4"><img src="./images/ZGBtry.jpg" ></div>
           <!-- rechte Box-->
         <div class="col-sm-8" style="background-color:lavenderblush;"><p><b>Verein Blue Orchid</b></p> 
 
