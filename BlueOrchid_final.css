@@ -126,6 +126,16 @@ h6,
   line-height: 1.25;
 }
 
+/*Defines color on the search button on statutes page*/
+.btn {
+  color: black;
+}
+
+/*This defines text color on navbar on statutes page*/
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
 .conBody {
   background-image: url(images/glow2.jpg);
   background-repeat: no-repeat;
