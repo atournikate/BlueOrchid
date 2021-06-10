@@ -8,7 +8,7 @@ body {
 .home_header {
   position: relative;
   background: radial-gradient(circle, white, rgba(24, 45, 102, 0.1)),
-    url(blue-moth-orchid.png);
+    url(images/blue-moth-orchid.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
