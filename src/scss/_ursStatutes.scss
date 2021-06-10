@@ -1,0 +1,85 @@
+.stat_header .Urs {
+  background-size: cover;
+  height: 100px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*URS
+    /*Reihe = Felder Footer*/
+.row .footer {
+  height: fit-content;
+}
+/*Spalte*/
+/*Newsletter*/
+
+.subscribe-area {
+  color: #cff6ff;
+}
+
+.subscribe-text span {
+  font-size: 10px;
+  font-weight: 700;
+  color: #cff6ff;
+  letter-spacing: 5px;
+}
+
+.subscribe-wrapper {
+  overflow: hidden;
+}
+
+.subscribe2-wrapper .subscribe-form input {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  color: #cff6ff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  height: 57px;
+
+  width: 60%;
+  cursor: pointer;
+}
+
+.subscribe2-wrapper .subscribe-form button {
+  background: #ffff;
+  border: none;
+  border-radius: 30px;
+  color: #cff6ff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  transition: all 0.3s ease 0s;
+}
+.subscribe2-wrapper .subscribe-form button i {
+  font-size: 15px;
+}
+
+.col-md-6 img {
+  width: 99.9%;
+}
+
+.mb-1 {
+  font-weight: bolder;
+}
+
+.container-info {
+  display: flex;
+  margin-right: 20px;
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+.controlsUrs {
+  background-color: #cca5f3;
+}
+.controls {
+  background-color: #4c3860;
+}
+
+#contact-submit {
+  background-color: #982f73;
+}

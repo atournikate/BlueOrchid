@@ -1,0 +1,17 @@
+/* Error: Missing element $green.
+ *     ,
+ * 197 |   color: rgb(#cff6ff);
+ *     |          ^^^^^^^^^^^^
+ *     '
+ *   src/scss/BOS_style.scss 197:10  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing element $green.\a     \2577 \a 197 \2502    color: rgb(#cff6ff);\a     \2502           ^^^^^^^^^^^^\a     \2575 \a   src/scss/BOS_style.scss 197:10  root stylesheet";
+}

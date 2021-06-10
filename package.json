@@ -1,0 +1,26 @@
+{
+  "name": "blue-orchid",
+  "version": "1.0.0",
+  "description": "Blue orchid association",
+  "main": "blueorchid_marc.js",
+  "scripts": {
+    "sassy": "sass --watch $(pwd)/src/scss:$(pwd)/build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atournikate/BlueOrchid.git"
+  },
+  "keywords": [
+    "Blue",
+    "Orchids"
+  ],
+  "author": "Marc David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atournikate/BlueOrchid/issues"
+  },
+  "homepage": "https://github.com/atournikate/BlueOrchid#readme",
+  "devDependencies": {
+    "sass": "^1.34.1"
+  }
+}
