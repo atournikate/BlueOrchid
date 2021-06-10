@@ -30,6 +30,11 @@ body {
   flex-direction: column;
 }
 
+/*This colors font for help in contact form on statutes*/
+a {
+  color: black;
+}
+
 .carousel-item {
   margin: 0px;
   padding: 0px;
@@ -404,4 +409,10 @@ h6,
   margin: 5px;
   text-align: center;
   margin-bottom: 0px;
+}
+
+/*This changes newsletter subscription box background in input 
+to better the contrast and make more accessible*/
+input#newsSub {
+  background-color: white;
 }
